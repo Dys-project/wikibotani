@@ -1,4 +1,4 @@
-# wikibotani
+# Website WikiBotani
 Website yang dimaksudkan sebagai katalog berbagai tumbuhan dari berbagai filum (bryophyta, pteridophyta, spermatophyta).
 
 Fitur: Proses CRUD data dengan penyimpanan pada file txt.
