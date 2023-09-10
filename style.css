@@ -1,0 +1,117 @@
+body{
+	background: linear-gradient(to bottom, #2a2b2d 0%, #78866b 100%);
+}
+.header{
+	border-style: solid transparent; 
+	margin: 10px 67px; 
+	padding: 0.3px; 
+	background-image: url(img/leaf.jpg); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+}
+a{
+	text-decoration: none;
+}
+.main{
+	border-style: inherit transparent; 
+	margin: 16px 70px; 
+	padding: 50px;
+	padding-right: 90px;
+	padding-left: 90px;
+	background: linear-gradient(to bottom, #555658 0%, #accf8c 100%);
+	border-color: transparent;
+}
+.content{
+	border-style: inherit transparent; 
+	border-radius: 13px;
+	margin-top: 13px;
+	margin-bottom: 10px;
+	padding: 28px;
+	background-image: linear-gradient(
+	    to bottom right,
+	    rgba(255, 255, 255, 0.2) 100%,
+	    rgba(255, 255, 255, 0.1) 100%
+	);
+	backdrop-filter: blur(6px);
+	box-shadow: rgba(255, 255, 255, 0.2)0px 0px 100px inset,
+ 		rgba(0.1, 0.1, 0.1, 0.1) 5px 20px 30px;
+	font-family: corbel;
+	color: white;
+	text-align: center;
+}
+.content_right{
+	border-style: solid; 
+	border-color: transparent; 
+	background-color: #E9E4D4; 
+	padding: 8px; 
+	width: 83%; 
+	float: right; 
+	min-height: 98%; 
+	margin-top: 0px;
+}
+table{
+	width: 75%;
+	border-collapse: collapse;
+	border-radius: 10px;
+	border-left: transparent;
+    border-right: transparent;
+    margin-bottom: 15px;
+}
+th, td{
+	padding: 7px;
+}
+.nav{
+	display: grid;
+	grid-gap: 10px;
+	border-style: solid transparent; 
+	background-color: transparent;
+	padding: 0px; 
+	width: 11%; 
+	float: left;
+	height: 99%;
+}
+ul{
+ 	list-style-type: none;
+  	overflow: hidden;
+}
+li a{
+	padding: 16px 16px 16px 20px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	font-family: corbel;
+}
+li a:hover{
+  	background-color: #34282C;
+  	transition: 300ms linear; 
+}
+#button, #tambah{
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;  
+	border-color: transparent;
+	border-radius: 10px;
+	background-color: #FAF5EF;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #3B2F2F;
+	cursor: pointer;
+}
+#button:hover {
+	background: #FBFBF9;
+    opacity: 0.5;
+}
+#tambah:hover {
+	background: #FBFBF9;
+    opacity: 0.5;
+}
+.footer{
+	border-style: solid transparent; 
+	margin: 0px 67px; 
+	padding: 8px; 
+	background-image: url(img/leaf.jpg); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+}

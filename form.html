@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Data | WIKI Botani</title>
+	<script type='text/javaScript'>
+		function popup(){
+			alert("Data berhasil ditambahkan!");
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		p{
+			text-align: center;
+			color: #34282C;
+			font-size: 17px;
+			font-weight: bold;
+		}
+    	select{
+    		border-style: solid;
+      		border-color: white;
+      		border-bottom-width: 1px;
+      		background-color: transparent;
+      		width: 30%;
+      		color: white;
+      		padding: 5px;
+    	}
+    	optgroup{
+    		text-align: left;
+    		color: #4C4646;
+    	}
+    	option{
+    		text-align: center;
+    		color: white;
+    	}
+    	textarea{
+    		border-top: solid;
+    		border-top-width: 1px;
+    		width: 40%;
+    	}
+    	textarea:active{
+      		opacity: 0; 
+      		position: relative;
+      	}
+      	#nama:active{
+      		opacity: 0; 
+      		position: relative;
+      	}
+    	#nama{
+    		border-top-width: 0px;
+    		width: 30%;
+    	}
+      	#nama, textarea{
+      		outline: none;
+      		border-style: solid;
+      		border-left: transparent;
+      		border-right: transparent;
+      		border-color: white;
+      		border-bottom-width: 3px;
+      		background-color: transparent;
+      		color: black;
+      	}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<center>
+			<h1><font face="forte" color="white">WIKI BOTANI</font></h1>
+		</center>
+		<center>
+			<i><h3><font face="calibri" color="white" size="1">Apapun yang Ingin Anda Ketahui tentang Tumbuhan</font></h3></i>
+		</center>
+		<ul style="background: linear-gradient(to bottom, #2a2b2d 0%, #78866b 100%);">
+			<li style="float: right;"><a href="pilihan.php">Data Input</a></li>
+			<li style="float: right;"><a href="form.html">Input Data</a></li>
+			<li style="float: right;"><a href="index.html">Home</a></li>
+		</ul>
+	</div>
+
+	<div class="main">
+		<div class="content">
+			<form action="pilihan.php" method="get">
+				<p>Nama Tumbuhan</p>
+				<p><input id="nama" type="text" name="nama" maxlength="25" placeholder="contoh : lumut hati"></p>
+				<br>
+				<p>Klasifikasi Tumbuhan</p>
+				<label>
+					<input type="radio" name="Klasifikasi" value="bryophyta"/>Bryophyta
+				</label>
+				<label>
+					<input type="radio" name="Klasifikasi" value="pteridophyta"/>Pteridophyta
+				</label>
+				<label>
+					<input type="radio" name="Klasifikasi" value="spermatophyta"/>Spermatophyta
+				</label>
+				<br><br>
+				<p>Yang Ingin Diketahui :</p>
+				<select name="yang_dicari[]" multiple="multiple" size="6">
+					<optgroup label="Bryophyta">
+						<option value="ciri">ciri-ciri</option>
+						<option value="manfaat">manfaat</option>
+					</optgroup>
+					<optgroup label="Pteridophyta">
+						<option value="ciri">ciri-ciri</option>
+						<option value="manfaat">manfaat</option>
+					</optgroup>
+					<optgroup label="Spermatophyta">
+						<option value="ciri">ciri-ciri</option>
+						<option value="manfaat">manfaat</option>
+					</optgroup>
+				</select>
+				<br><br>
+				<p>Deskripsi Tumbuhan : </p>
+				<textarea name="deskripsi" rows="4" cols="66" placeholder="tuliskan kriteria tumbuhan!"></textarea>
+				<br><br>
+				<input id="button" type="submit" name="submit" onclick="popup()">
+				<br><br>
+			</form>	
+		</div>
+	</div>
+
+	<div class="footer">
+		<center>
+			<h3 style="color: white; font-family: forte">WIKI BOTANI</h3>
+			<h5 style="color: white; font-family: calibri">dyahayurosi11@gmail.com</h5>		
+		</center>
+	</div>
+</body>
+</html>
